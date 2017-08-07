@@ -1,0 +1,38 @@
+group 'com.tmtron'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+sourceSets {
+    debug {
+        java {
+            compileClasspath += sourceSets.main.compileClasspath
+            runtimeClasspath += sourceSets.main.runtimeClasspath
+        }
+    }
+}
+
+configurations {
+    debugCompile.extendsFrom compile
+    debugRuntime.extendsFrom runtime
+}
+
+task debugJar(type: Jar) {
+    // we want the output of the main AND debug source Sets
+    from sourceSets.debug.output, sourceSets.main.output
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+//    compile 'com.google.code.findbugs:jsr305:3.0.2'
+
+    // the debug compilation may need classes from main (e.g. extend a class)
+    debugCompile sourceSets.main.output
+}

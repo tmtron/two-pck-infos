@@ -1,0 +1,3 @@
+-source 1.8 -target 1.8 -g
+-processorpath ./libs/min-annotation-processor-1.0.jar;./libs/min-annotation-lib-1.0.jar;./libs/jsr305-3.0.2.jar
+-classpath ./libs/min-annotation-lib-1.0.jar;./libs/jsr305-3.0.2.jar
