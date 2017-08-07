@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/two-pck-infos.iml" filepath="$PROJECT_DIR$/.idea/modules/two-pck-infos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/two-pck-infos_debug.iml" filepath="$PROJECT_DIR$/.idea/modules/two-pck-infos_debug.iml" group="two-pck-infos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/two-pck-infos_main.iml" filepath="$PROJECT_DIR$/.idea/modules/two-pck-infos_main.iml" group="two-pck-infos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/two-pck-infos_test.iml" filepath="$PROJECT_DIR$/.idea/modules/two-pck-infos_test.iml" group="two-pck-infos" />
+    </modules>
+  </component>
+</project>
